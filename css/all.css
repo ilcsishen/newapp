@@ -1,6 +1,9 @@
 /*暫時隱藏*/
 .menu ul li:nth-child(5){display:none;}
 .menu ul li:nth-child(6){display:none;}
+.proleft {display: none;}
+.proright {display: none;}
+
 /*回到頂部*/
 .goTop {
   position: fixed;
@@ -559,7 +562,7 @@ z-index: -1;
   background-color: #8bd3dd;
   position: absolute;
   border-radius: 50px;
-  transform: translate(24px);
+  transform: translate(30px);
   top: 25px;
   border: solid 3px #001857;
 }
@@ -570,7 +573,7 @@ z-index: -1;
   background-color: #8bd3dd;
   position: absolute;
   border-radius: 50px;
-  transform: translate(-44px);
+  transform: translate(-55px);
   top: 25px;
   border: solid 3px #001857;
 }
@@ -718,7 +721,7 @@ display: flex;
   .detailabout_text ul li span{padding:10px 0 0 0;font-weight:400;font-size:16px;line-height: 24px;color: #d8edf9;text-align: justify;}
   .detailpic{width:100%;max-width:1100px;margin:0 auto;position:relative;bottom:100px;}
   .detailpic ul{display:flex;flex-wrap:wrap;}
-  .detailpic ul li{width:50%;padding:25px;}
+  .detailpic ul li{width:auto;padding:25px;}
   .detailabout_text ul li a{color: #f1c4aa;
     padding: 5px 0 0 0;
     display: block;}
@@ -850,4 +853,23 @@ display: flex;
   }
     .detailscroll_name ul{flex-direction: column;
       align-items: center;}
+  }
+
+
+
+  .profile{width: 100%;
+    height: 100vh;
+    background-color: rgb(197 239 233);}
+    .protop{    height: 50%;
+      max-width: 1100px;
+      background: #d9bdad;
+      margin: 0 auto;padding: 100px;
+      margin-top: 10%;}
+
+      .namecard {
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .namecard h3{
+      font-size: 20px;
   }
