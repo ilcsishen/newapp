@@ -1,6 +1,6 @@
 /*暫時隱藏*/
-.menu ul li:nth-child(5){display:none;}
-.menu ul li:nth-child(6){display:none;}
+ul.menu li:nth-child(5){display:none;}
+ul.menu li:nth-child(6){display:none;}
 .proleft {display: none;}
 .proright {display: none;}
 
