@@ -8,15 +8,15 @@
 .head_inner a:first-child:before , .head_inner a:last-child:before{
   content: "";
 }
-.head_inner .menu ul li a:before {
+.head_inner ul.menu li a:before {
   content: "|";
   position: absolute;
   right: -5px;
   color: #ccc;
 }
 
-.menu ul{display: flex;flex-direction: row;list-style: none;}
-.menu ul li{padding: 5px;
+ul.menu{display: flex;flex-direction: row;list-style: none;}
+ul.menu li{padding: 5px;
   line-height: 36px;}
 
 #logo a {
@@ -50,44 +50,6 @@ body{
   header{
       width:100%;
   }
-  .hamburger{
-    background:none;
-    position:absolute;
-    top:0;
-    right:0;
-    line-height:45px;
-    padding:5px 15px 0px 15px;
-    color:#999;
-    border:0;
-    font-size:1.4em;
-    font-weight:bold;
-    cursor:pointer;
-    outline:none;
-    z-index:10000000000000;
-  }
-  .cross{
-    background:none;
-    position:absolute;
-    top:0px;
-    right:0;
-    padding:7px 15px 0px 15px;
-    color:#999;
-    border:0;
-    font-size:3em;
-    line-height:65px;
-    font-weight:bold;
-    cursor:pointer;
-    outline:none;
-    z-index:10000000000000;
-  }
-  .ham_menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
-  .ham_menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-  .ham_menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-  .ham_menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-  .ham_menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
-  .ham_menu ul li a:hover {  color: #666; text-decoration:none;}
-  .ham_menu a{text-decoration:none; color:#666;}
-  .ham_menu a:hover{text-decoration:none; color:#666;}
   
   .glyphicon-home{
     color:white; 
@@ -98,3 +60,52 @@ body{
 
   span{padding-left:20px;}
   /* a{color:#336699;} */
+
+
+
+  /* 在PC上隱藏漢堡選單 */
+.showmenu{
+  display: none;
+}
+@media (max-width: 767px){
+  .menu {
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 1.5s;
+    margin-top: 1px;
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    /*header 80px+1px boder 線條*/
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #fffffff5;
+    flex-direction: column!important;
+    
+  }
+  .head_inner ul.menu li a:before{display:none;}
+  .menu li{
+    float: none;
+    border-bottom: 1px dashed #dbc3b6;
+  }
+  .menu li a{
+    transition: all 0.3s;
+  }
+  .menu li a:hover{
+    background: #f1ba9a;
+    color: #fff;
+  }
+  .head_inner a.showmenu{
+    display: block;
+    margin: 1em;
+    position: absolute;
+    right: 10px;
+  }
+  /*jQ點擊後動態在 body 加上 class */
+  .menu-show .menu{
+    max-height: 500px
+  }
+}
