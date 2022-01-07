@@ -4,6 +4,8 @@ ul.menu li:nth-child(6){display:none;}
 .proleft {display: none;}
 .proright {display: none;}
 
+.intro02_yearsofwork{padding-bottom: 80px;}
+
 /*回到頂部*/
 .goTop {
   position: fixed;
@@ -62,6 +64,7 @@ img.gotoppic2 {
   flex-direction: row;
   margin: 0 auto;
   padding-top: 110px;
+  padding-bottom:80px;
 }
 .intro00text, .intro00img{width:50%;}
 .intro00text{display: flex;
@@ -81,7 +84,7 @@ a.intro00qinput:hover span {color: #fff;letter-spacing: 2px;}
 .intro01{width:100%;}
 .intro01_inner{padding:100px 0 40px 0;}
 .intro01_inner ul{max-width:1100px;margin: 0 auto;display:flex;flex-direction: row;position:relative;z-index:1;}
-.intro01_inner ul li{width:calc(100%/3);margin-right:20px;background-color: #CBE6E4;padding:30px 20px 40px 20px; position:relative;text-align: justify;}
+.intro01_inner ul li{width:calc(100%/3);margin-right:20px;background-color: #CBE6E4;padding:30px 20px 40px 20px; position:relative;}
 .int03case{margin-right:unset;}
 .intro01_inner ul li h3{position:relative;background-repeat: no-repeat;
   height: 56px;
@@ -503,7 +506,7 @@ z-index: -1;
 .profile{
     display:flex;
     width:1100px;height: 1500px;
-    background-color:rgb(105, 94, 94);
+    background: url(../css/image/pro_ba-11.png);
     margin: 0 auto;}
   
   .protop{
@@ -520,7 +523,7 @@ z-index: -1;
   }
   
   .namecard{
-    color:#fff;
+    color: rgb(60 15 15);
     flex-direction: column;
     
   }
@@ -610,8 +613,16 @@ z-index: -1;
   top: 25px;
   border: solid 3px #001857;
 }
+/*貓頭鷹輪播*/
+div#swipe_bbg {
+  padding-bottom: 80px;
+}
+
+
   /*瀑布流*/
 
+  .logoworksinner{max-width:1100px;margin:0 auto;padding-top: 110px;
+    padding-bottom:80px;}
   .loadingScreen{
     background-color: #ffffff;
     width:100vh;
@@ -631,6 +642,7 @@ z-index: -1;
   box-shadow: 0px 0px 15px #e5e5e5;
   border-radius: 15px;
   min-width: 330px;
+  background-color:#fff;
 }
 
 
@@ -641,6 +653,7 @@ z-index: -1;
   width:100%;
   height:auto;
   padding-top:110px;
+  padding-bottom:80px;
 
 }
 
@@ -761,22 +774,33 @@ display: flex;
 
 
 /*website work*/
-.web_formain{
-  background-color: #ddd;
-}
+.web_formain{background: url(../css/image/pro_ba-11.png);}
 .web_prowork {
   width:100%;
   padding-top: 110px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 .wev_proinner{
   display: flex;
-  max-width:1100px;
   margin: 0 auto;
 }
+
+.webtitle {
+  line-height: 45px;
+  width: 100%;
+  padding: 30px 20px 50px 20px;
+  text-align: center;
+  background: #e6f5ea;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+}
+.webtitle h1{color:#141944;font-size:30px;}
 .webwork1 a img, .webwork2 a img{
   border-radius: 15px;
+  margin: 0 auto;
 }
+.webtitleinner{max-width:1100px;
+margin:0 auto;}
 
 .webwork1 h3, .webwork2 h3 {
   padding: 15px 0;
@@ -784,7 +808,7 @@ display: flex;
   letter-spacing: 1px;
 }
 .webwork1, .webwork2{
-  background: #fff;
+  background: #d9efdf;
   border-radius: 15px;
   margin: 10px;
   width: 50%;
@@ -819,6 +843,7 @@ display: flex;
   width: 100%;
   margin: 0 auto;
   height: auto;
+  padding-bottom: 80px;
 }
 .joo_work ul li {
   display: block;
@@ -892,12 +917,14 @@ display: flex;
 
   .profile{width: 100%;
     height: 100vh;
-    background-color: rgb(197 239 233);}
-    .protop{    height: 50%;
+    background: url(../css/image/pro_ba-11.png);}
+    .protop{    
+      height: 50%;
       max-width: 1100px;
       background: #d9bdad;
       margin: 0 auto;padding: 100px;
-      margin-top: 10%;}
+      margin-top: 10%;
+      border-radius:15px;}
 
       .namecard {
         line-height: 30px;

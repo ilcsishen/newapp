@@ -4,7 +4,6 @@
     position: relative;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    margin-top: 80px;
   }
 
   .mainfooter {
@@ -22,6 +21,7 @@
     width: 40%;
     height: 60px;
     background: #F0BA9A;
+    z-index: 9;
 }
 .contactbtn a {
   display: block;
