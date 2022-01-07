@@ -82,7 +82,7 @@ a.intro00qinput:hover span {color: #fff;letter-spacing: 2px;}
 .intro01_inner{padding:100px 0 40px 0;}
 .intro01_inner ul{max-width:1100px;margin: 0 auto;display:flex;flex-direction: row;position:relative;z-index:1;}
 .intro01_inner ul li{width:calc(100%/3);margin-right:20px;background-color: #CBE6E4;padding:30px 20px 40px 20px; position:relative;text-align: justify;}
-.intro01_inner ul li:last-child{margin-right:unset;}
+.int03case{margin-right:unset;}
 .intro01_inner ul li h3{position:relative;background-repeat: no-repeat;
   height: 56px;
   text-align: center;
@@ -462,8 +462,41 @@ z-index: -1;
   width: 100%;
 }
 
-/***/
+/*首頁RWD手機*/
+@media screen and (max-width: 767px){
+  .intro00_inner{flex-direction: column-reverse;}
+  .intro00text, .intro00img {
+    width: 75%;
+    margin: 0 auto;}
+  .intro00text{text-align: center;align-items: center;}
 
+  .intro01_inner ul{flex-direction: column;}
+  .intro01_inner ul li {width: 75%;margin: 0 auto;margin-bottom: 70px;}
+  .intro01_inner ul li:before{right: 50%;
+    transform: translate(50%);}
+    ul#ywork_tab li a{line-height: 28px;}
+
+    div#yworkinner{width:100%; margin-top: 20px;}
+    .intro02_yearsofwork{flex-direction: column;}
+    .tab-pane{ margin: 0 20px;}
+    ul#ywork_tab {
+      width: calc(100% - 40px);
+      flex-wrap: unset;
+      margin: 0 auto;}
+      .tab-pane:before{border-width: 0 20px 25px 20px;
+        border-color: transparent transparent #DEF1E5 transparent;}
+      #MCUCD:before{top: 2%;transform: translate(50%, -100%);left: calc(100%/12);}
+      #NTUAVD:before{top: -3%;
+        transform: translate(50%);
+        left: 40%;}
+        #HMD:before{top: 2%;transform: translate(50%, -100%);right: calc(100%/6);}
+      
+
+}
+@media screen and (max-width: 480px){
+  .intro00text, .intro00img {
+    width: 80%;}
+}
 
 
 

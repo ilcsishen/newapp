@@ -50,3 +50,18 @@
 }
   /*修正icon錯誤*/
   .foot_contact ul li .fa-linkedin:before{content: "\f08c";}
+
+  @media screen and (max-width: 767px){
+
+    .mainfooter{ padding: 70px 15px 50px 15px;flex-direction: column;align-items: center;}
+    .foocopyright {
+      text-align: center;}
+      .foot_contact, .foocopyright{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;}
+
+
+  }
