@@ -22,3 +22,14 @@ document.writeln("        </div>");
 document.writeln("</div>");
 document.writeln("");
 document.writeln("");
+
+
+$( document ).ready(function() {
+
+$('.showmenu').on('click',  function(e){
+    e.preventDefault();
+    $('body').toggleClass('menu-show');
+});
+
+
+});
