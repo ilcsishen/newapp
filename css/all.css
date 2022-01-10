@@ -52,7 +52,7 @@ img.gotoppic2 {
   width: 100%;
   height: auto;
   min-height:768px;
-  background: url(https://imgur.com/OBwjTvO.jpg);
+  background: url(image/index_00.jpg);
   background-attachment: fixed;
 }
 
@@ -571,12 +571,14 @@ z-index: -1;
   transform: translate(50%);}
 
   .exp_timeline ul li:nth-child(odd) {
-    transform: translate(-3%);
+    transform: translate(0%);
     text-align: right;
+    padding-right:20px;
 }
 .exp_timeline ul li:nth-child(even) {
-  transform: translate(106%);
+  transform: translate(100%);
   text-align: left;
+  padding-left:20px;
 }
 .exp_timeline ul li span h3 {
     font-size: 40px;
@@ -598,7 +600,7 @@ z-index: -1;
   background-color: #8bd3dd;
   position: absolute;
   border-radius: 50px;
-  transform: translate(30px);
+  transform: translate(28px);
   top: 25px;
   border: solid 3px #001857;
 }
@@ -609,7 +611,7 @@ z-index: -1;
   background-color: #8bd3dd;
   position: absolute;
   border-radius: 50px;
-  transform: translate(-55px);
+  transform: translate(-32px);
   top: 25px;
   border: solid 3px #001857;
 }
