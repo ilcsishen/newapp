@@ -509,14 +509,6 @@ z-index: -1;
     background: url(../css/image/pro_ba-11.png);
     margin: 0 auto;}
   
-  .protop{
-    width: 100%;
-    height: 20%;
-    background: #222;
-    margin: 10px;
-    display:inline-flex;
-  }
-  
   .profileimg,.namecard{
     width:50%;
     display:flex;
@@ -540,12 +532,49 @@ z-index: -1;
     width:200px;
     height:200px;
   }
+  .profile{width: 100%;
+    height: 100vh;
+    background: url(../css/image/pro_ba-11.png);}
+    
+.protop{    
+    width: 100%;
+    display:inline-flex;
+    height: 50%;
+    max-width: 1100px;
+    background: #d9bdad;
+    margin: 0 auto;padding: 100px;
+    margin-top: 10%;
+    border-radius:15px;}
 
+    .namecard {
+      line-height: 30px;
+      font-size: 16px;
+  }
+  .namecard h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+  @media screen and (max-width: 767px){
+
+    .protop{ height: 80vh;flex-direction: column;padding: 40px;margin-top: 110px;}
+
+    .profileimg img{width: 50%;
+      height: auto;}
+    .profileimg, .namecard{width: 80%;text-align: center;}
+    .namecard{padding-top:40px;}
+
+  }
+  @media screen and (max-width: 576px){
+    
+    .profileimg, .namecard{width: 100%;}
+
+}
 
 
 
 /*首頁 時間軸*/
-.exp_timeline{width: 100%;height: auto;background: #f3d2c1;position: relative;margin: 20px 0;}
+.exp_timeline{width: 100%;height: auto;background: #f3d2c1;position: relative;margin:0 auto;}
 .exptitle {
   margin: 0 auto;
   text-align: center;
@@ -614,6 +643,11 @@ z-index: -1;
   transform: translate(-32px);
   top: 25px;
   border: solid 3px #001857;
+}
+
+
+@media screen and (max-width: 767px){
+  .exp_timeline ul li span{font-size: 16px;}
 }
 /*貓頭鷹輪播*/
 div#swipe_bbg {
@@ -695,6 +729,26 @@ div#swipe_bbg {
 .pro_pic img{max-width:450px;border-radius:15px;box-shadow: 0px 0px 15px #8f8f8f7d;}
 
 .for_main.projectformain{background: url(../css/image/pro_ba-11.png);}
+
+@media screen and (max-width: 767px){
+
+  .proinner{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;}
+    
+  .pro_intro {
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    top: -60px;
+    height: auto;}
+  .pro_intro a{margin: 20px 0;}
+  .pro_intro .protext{ height: auto;}
+  .pro_pic {padding: 10px;}
+  .pro_pic img{display:flex;margin: 0 auto;max-width: 95%;}
+
+}
 
 
 
@@ -917,21 +971,3 @@ margin:0 auto;}
 
 
 
-  .profile{width: 100%;
-    height: 100vh;
-    background: url(../css/image/pro_ba-11.png);}
-    .protop{    
-      height: 50%;
-      max-width: 1100px;
-      background: #d9bdad;
-      margin: 0 auto;padding: 100px;
-      margin-top: 10%;
-      border-radius:15px;}
-
-      .namecard {
-        line-height: 30px;
-        font-size: 16px;
-    }
-    .namecard h3{
-      font-size: 20px;
-  }
